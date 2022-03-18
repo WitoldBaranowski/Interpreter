@@ -69,7 +69,7 @@ def venv_controll(code, stinput):
     p = subprocess.Popen([cwd + cal_dir + '/Scripts/python.exe', code],
                          stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     stdout, stderr = p.communicate(input=bytes(stinput, 'utf-8'))
-    print(cwd + cal_dir + '/Scripts/python.exe')
+    # print(cwd + cal_dir + '/Scripts/python.exe')
     # os.system('python print.py')
     os.environ['PATH'] = removal
     os.chdir(cwd)
